@@ -1,3 +1,18 @@
+.build-*/
+*.dir/
+Debug/
+CMakeFiles/
+build/
+CMakeCache.txt
+*.log
+
+*.vcxproj*
+*.opensdf
+*.sdf
+*.suo
+*.sln
+*.ilk
+
 # Compiled Object files
 *.slo
 *.lo
@@ -7,13 +22,11 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
