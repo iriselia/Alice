@@ -4,8 +4,7 @@ This project is merely an adaptation of the original project
 to add support to CMake to bring convenience to those who are
 unable to build on specific platforms with the original source.
 
-This project is *not* developed by piaoasd123.
-Original by:
+This project is *not* developed by piaoasd123; it is original developed by:
 
     Matheus Silva Vilela (matheusv@dcc.ufmg.br)
     Thiago Silva Vilela (thiagov@dcc.ufmg.br)
