@@ -14,5 +14,5 @@ Original by:
 from:
 http://homepages.dcc.ufmg.br/~matheusv/game.html
 
-[pic](https://raw.github.com/piaoasd123/Alice/master/pics/ss1.jpg)
-[pic](https://raw.github.com/piaoasd123/Alice/master/pics/ss2.jpg)
+![pic](https://raw.github.com/piaoasd123/Alice/master/pics/ss1.jpg)
+![pic](https://raw.github.com/piaoasd123/Alice/master/pics/ss2.jpg)
