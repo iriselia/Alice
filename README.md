@@ -14,3 +14,5 @@ Original by:
 from:
 http://homepages.dcc.ufmg.br/~matheusv/game.html
 
+[![pic](https://raw.github.com/magwitch324/wpi-suite/dev/Pictures/Create Event Button.png)]
+(https://github.com/magwitch324/wpi-suite/wiki/Add-Event)
