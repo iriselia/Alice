@@ -240,16 +240,17 @@ int main(int argc, char *argv[]) {
 	forest->insertEntity(new Enemy((char*)"sprites/bichor.dat", 32, 32, 30 * 32, 13 * 32, 2, 5, 3, wander));
 	forest->insertEntity(new Enemy((char*)"sprites/bicho.dat", 32, 32, 31 * 32, 7 * 32, 1, 5, 3, wander));
 	forest->insertEntity(new Enemy((char*)"sprites/bichor.dat", 32, 32, 26 * 32, 9 * 32, 2, 5, 3, wander));
-#pragma endregion forest
+
 	//vigiando cemiterio
 	Enemy *patrollingEnemy1 = new Enemy((char*)"sprites/bicho.dat", 32, 32, 38 * 32, 10 * 32, 1, 5, 3, patrol);
 	patrollingEnemy1->addWaypoint(coord(38 * 32, 5 * 32));
 	patrollingEnemy1->addWaypoint(coord(38 * 32, 10 * 32));
 	forest->insertEntity(patrollingEnemy1);
-	Enemy *patrollingEnemy2 = new Enemy((char*)"sprites/bichor.dat", 32, 32, 42 * 32, 6 * 32, 2, 5, 3, patrol);
-	patrollingEnemy2->addWaypoint(coord(42 * 32, 6 * 32));
-	patrollingEnemy2->addWaypoint(coord(42 * 32, 9 * 32));
-	forest->insertEntity(patrollingEnemy2);
+// 	Enemy *patrollingEnemy2 = new Enemy((char*)"sprites/bichor.dat", 32, 32, 42 * 32, 6 * 32, 2, 5, 3, patrol);
+// 	patrollingEnemy2->addWaypoint(coord(42 * 32, 6 * 32));
+// 	patrollingEnemy2->addWaypoint(coord(42 * 32, 9 * 32));
+// 	forest->insertEntity(patrollingEnemy2);
+#pragma endregion forest
 
 	/* Algumas variaveis :D */
 	frame_counter = 0;// A counter for which frame to draw
@@ -259,6 +260,7 @@ int main(int argc, char *argv[]) {
 	bool controlMultiplayer = true;
 
 	srand(time(NULL));
+
 #pragma region titlescreen
 	music = load_midi("music/titlescreen.mid");
 	set_volume(-1, 100);
@@ -271,9 +273,12 @@ int main(int argc, char *argv[]) {
 	//*/
 #pragma endregion titlescreen
 
+#pragma region game loop
+	//Change BGM on entering main loop for the first time
 	music = load_midi("music/millenialfair.mid");
 	set_volume(-1, 100);
 	play_midi(music, 1);
+
 	while (!key[KEY_ESC]) {
 		clear_keybuf();
 
@@ -416,6 +421,7 @@ int main(int argc, char *argv[]) {
 #pragma endregion draw commands
 
 	}
+#pragma endregion game loop
 	return(0);
 
 hehehe:
