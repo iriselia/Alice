@@ -242,10 +242,10 @@ int main(int argc, char *argv[]) {
 	forest->insertEntity(new Enemy((char*)"sprites/bichor.dat", 32, 32, 26 * 32, 9 * 32, 2, 5, 3, wander));
 
 	//vigiando cemiterio
-	Enemy *patrollingEnemy1 = new Enemy((char*)"sprites/bicho.dat", 32, 32, 38 * 32, 10 * 32, 1, 5, 3, patrol);
-	patrollingEnemy1->addWaypoint(coord(38 * 32, 5 * 32));
-	patrollingEnemy1->addWaypoint(coord(38 * 32, 10 * 32));
-	forest->insertEntity(patrollingEnemy1);
+// 	Enemy *patrollingEnemy1 = new Enemy((char*)"sprites/bicho.dat", 32, 32, 38 * 32, 10 * 32, 1, 5, 3, patrol);
+// 	patrollingEnemy1->addWaypoint(coord(38 * 32, 5 * 32));
+// 	patrollingEnemy1->addWaypoint(coord(38 * 32, 10 * 32));
+// 	forest->insertEntity(patrollingEnemy1);
 // 	Enemy *patrollingEnemy2 = new Enemy((char*)"sprites/bichor.dat", 32, 32, 42 * 32, 6 * 32, 2, 5, 3, patrol);
 // 	patrollingEnemy2->addWaypoint(coord(42 * 32, 6 * 32));
 // 	patrollingEnemy2->addWaypoint(coord(42 * 32, 9 * 32));
